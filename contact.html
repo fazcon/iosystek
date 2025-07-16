@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IOSYSTEK - Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 fixed w-full z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-700">
+                <a href="index.html">IOSYSTEK</a>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="services.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Services</a></li>
+                <li><a href="about.html" class="text-gray-700 hover:text-blue-600 transition duration-300">About Us</a></li>
+                <li><a href="solutions.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Solutions</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-600 transition duration-300">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-6 md:py-24 md:px-12 bg-white">
+            <div class="container mx-auto max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Get in Touch</h2>
+                <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="mb-6">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 text-sm font-bold mb-2">Phone (Optional)</label>
+                        <input type="tel" id="phone" name="phone" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Phone Number">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Tell us about your IT needs..."></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-10 px-6 md:px-12 text-center rounded-t-lg">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <div class="text-2xl font-bold text-blue-400 mb-4 md:mb-0">IOSYSTEK</div>
+                <ul class="flex flex-wrap justify-center space-x-6">
+                    <li><a href="services.html" class="text-gray-300 hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="about.html" class="text-gray-300 hover:text-white transition duration-300">About Us</a></li>
+                    <li><a href="solutions.html" class="text-gray-300 hover:text-white transition duration-300">Solutions</a></li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <p class="text-gray-400 text-sm">&copy; 2024 IOSYSTEK. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
