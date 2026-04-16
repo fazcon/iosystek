@@ -6,7 +6,14 @@
     <title>Contact | IOSYSTEK</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+            formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
+    </script>
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo-container"><img src="assets/images/logo.svg" alt="IOSYSTEK Logo"></a>
@@ -31,7 +38,8 @@
                     <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&q=80&w=800" class="img-wrap" alt="Contact Us" style="margin-top:30px;">
                 </div>
                 <div class="card" style="padding:40px;">
-                    <form action="https://formspree.io/f/xeevarql"  method="POST">
+                    <!-- <form action="https://formspree.io/f/xeevarql"  method="POST"> -->
+                        <form>
                         <lable>
                             Your name:
                             <input type="text" name="name" placeholder="Name" style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;">
@@ -41,7 +49,7 @@
                             <input type="email" email placeholder="Business Email" style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;">
                         </lable>    
                         <textarea name = "message" placeholder="How can we help?" rows="5" style="width:100%; padding:15px; margin-bottom:15px; border:1px solid #ddd; border-radius:5px;"></textarea>
-                        <button type="button" class="btn btn-primary" style="width:100%;">Send Inquiry</button>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry</button>
                     </form>
                 </div>
             </div>
