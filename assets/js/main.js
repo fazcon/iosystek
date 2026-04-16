@@ -1,1 +1,0 @@
-console.log('IOSYSTEK site loaded');
