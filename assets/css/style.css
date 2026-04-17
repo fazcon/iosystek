@@ -121,7 +121,7 @@ footer { background: var(--dark); color: white; padding: 80px 5% 30px; }
     border: 1px solid #f0f0f0;
 }
 
-/* Request all form pages */
+/* Request all form pages
 .form-container {
     max-width: 760px;
     margin: 0 auto;
@@ -200,4 +200,4 @@ footer { background: var(--dark); color: white; padding: 80px 5% 30px; }
     .form-group textarea {
         padding: 12px 14px;
     }
-}
+} */
