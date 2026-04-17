@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Hub | IOSYSTEK</title>
+    <title>Gov Opportunity | IOSYSTEK</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script>
+            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+            formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
+    </script>
 </head>
 <body>
     <header>
@@ -19,22 +24,21 @@
         </nav>
     </header>
     <section class="hero" style='background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1600");'>
-        <div class="hero-content"><h1>How Can We Help?</h1></div>
+        <div class="hero-content"><h1>Contracting Solutions</h1></div>
     </section>
     <main class="section container">
-        
-<div style="text-align: center; margin-bottom: 50px;">
-    <h2>Specialized Inquiries</h2>
-    <p>Select an option below to ensure your request reaches the right expert.</p>
-</div>
-<div class="selection-grid">
-    <a href="form-request-talent.html" class="form-card"><span class="tag">Staffing</span><h3>Request Talent</h3><p>Best for: Companies needing engineers fast.</p><strong>Start Hiring &rarr;</strong></a>
-    <a href="form-consultation.html" class="form-card"><span class="tag">Advisory</span><h3>Request Consultation</h3><p>Best for: Businesses needing advice.</p><strong>Book Meeting &rarr;</strong></a>
-    <a href="form-staffing-support.html" class="form-card"><span class="tag">Partnership</span><h3>Get Staffing Support</h3><p>Best for: Longer staffing engagements.</p><strong>Learn More &rarr;</strong></a>
-    <a href="form-gov-opportunity.html" class="form-card"><span class="tag">GovCon</span><h3>Discuss Gov Opportunity</h3><p>Best for: Federal / state contracts.</p><strong>Collaborate &rarr;</strong></a>
-    <a href="form-cloud-project.html" class="form-card"><span class="tag">Projects</span><h3>Start Cloud Project</h3><p>Best for: Migration & architecture.</p><strong>Scope Project &rarr;</strong></a>
-</div>
-
+        <div class="form-container"><form action="https://formspree.io/f/xeevarql" method="POST">
+    <div class="form-group"><label>Full Name</label><input type="text" name="name" required></div>
+    <div class="form-group"><label>Company Name</label><input type="text" name="company" required></div>
+    <div class="form-group"><label>Work Email</label><input type="email" name="email" required></div>
+    <div class="form-group"><label>Roles Needed</label><select name="roles" multiple>
+        <option>Cloud Engineer</option><option>DevOps Engineer</option><option>Security Engineer</option>
+        <option>Data Engineer</option><option>AI Engineer</option><option>Solution Architect</option>
+    </select></div>
+    <div class="form-group"><label>Start Date</label><input type="date" name="start"></div>
+    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="How can we help?"></textarea></div>
+    <button type="submit" class="btn btn-primary" style="width:100%">Request Talent Now</button>
+</form></div>
     </main>
     <footer>
         <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
