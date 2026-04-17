@@ -29,44 +29,71 @@
 <main class="section container">
     <div class="form-container">
         <form action="https://formspree.io/f/xeevarql" method="POST">
+            <input type="hidden" name="Inquiry Type" value="Staffing">
             <div class="form-group">
                 <label>Full Name</label>
-                <input type="text" name="name" required>
+                <input type="text" name="full_name" required>
             </div>
-
             <div class="form-group">
                 <label>Company Name</label>
-                <input type="text" name="company" required>
+                <input type="text" name="company_name" required>
             </div>
-
             <div class="form-group">
                 <label>Work Email</label>
-                <input type="email" name="email" required>
+                <input type="email" name="work_email" required>
             </div>
-
             <div class="form-group">
-                <label>Roles Needed</label>
-                <select name="roles" multiple>
-                    <option>Cloud Engineer</option>
-                    <option>DevOps Engineer</option>
-                    <option>Security Engineer</option>
-                    <option>Data Engineer</option>
-                    <option>AI Engineer</option>
-                    <option>Solution Architect</option>
+                <label>Phone Number</label>
+                <input type="tel" name="phone_number">
+            </div>
+            <div class="form-group">
+                <label>Job Titles Needed</label>
+                <input type="text" name="job_titles_needed" placeholder="Example: Cloud Engineer, DevOps Engineer" required>
+            </div>
+            <div class="form-group">
+                <label>Number of Openings</label>
+                <input type="number" name="number_of_openings">
+            </div>
+            <div class="form-group">
+                <label>Employment Type</label>
+                <select name="employment_type">
+                    <option>Contract</option>
+                    <option>Full Time</option>
+                    <option>Contract to Hire</option>
                 </select>
             </div>
-
+            <div class="form-group">
+                <label>Clearance Required</label>
+                <select name="clearance_required">
+                    <option>No</option>
+                    <option>Yes, Public Trust</option>
+                    <option>Yes, Secret</option>
+                    <option>Yes, Top Secret</option>
+                    <option>Yes, TS/SCI</option>
+                </select>
+            </div>
             <div class="form-group">
                 <label>Start Date</label>
-                <input type="date" name="start">
+                <input type="date" name="start_date">
             </div>
-
+            <div class="form-group">
+                <label>Work Location</label>
+                <select name="work_location">
+                    <option>Remote</option>
+                    <option>Hybrid</option>
+                    <option>Onsite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Skills Needed</label>
+                <textarea name="skills_needed" rows="4" placeholder="List the core skills, tools, or certifications needed."></textarea>
+            </div>
             <div class="form-group">
                 <label>Message</label>
-                <textarea name="message" rows="4" placeholder="How can we help?"></textarea>
+                <textarea name="message" rows="4" placeholder="Tell us about your hiring needs."></textarea>
             </div>
-
             <button type="submit" class="btn btn-primary">Request Talent Now</button>
+
         </form>
     </div>
 </main>
