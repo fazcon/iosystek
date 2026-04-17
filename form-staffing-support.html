@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Staffing Support | IOSYSTEK</title>
+    <title>Request Partnership | IOSYSTEK</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
             window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
             formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
-    </script>
+    </script>    
 </head>
 <body>
     <header>
@@ -24,22 +24,59 @@
         </nav>
     </header>
     <section class="hero" style='background-image: url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&q=80&w=1600");'>
-        <div class="hero-content"><h1>Expand Your Team</h1></div>
+        <div class="hero-content"><h1>Request Partnership</h1></div>
     </section>
-    <main class="section container">
-        <div class="form-container"><form action="https://formspree.io/f/xeevarql" method="POST">
-    <div class="form-group"><label>Full Name</label><input type="text" name="name" required></div>
-    <div class="form-group"><label>Company Name</label><input type="text" name="company" required></div>
-    <div class="form-group"><label>Work Email</label><input type="email" name="email" required></div>
-    <div class="form-group"><label>Roles Needed</label><select name="roles" multiple>
-        <option>Cloud Engineer</option><option>DevOps Engineer</option><option>Security Engineer</option>
-        <option>Data Engineer</option><option>AI Engineer</option><option>Solution Architect</option>
-    </select></div>
-    <div class="form-group"><label>Start Date</label><input type="date" name="start"></div>
-    <div class="form-group"><label>Message</label><textarea name="message" rows="4" placeholder="How can we help?"></textarea></div>
-    <button type="submit" class="btn btn-primary" style="width:100%">Request Talent Now</button>
-</form></div>
-    </main>
+<main class="section container">
+    <div class="form-container">
+        <form action="https://formspree.io/f/xeevarql" method="POST">
+            <input type="hidden" name="Inquiry Type" value="Partnership">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label>Company Name</label>
+                <input type="text" name="company_name" required>
+            </div>
+            <div class="form-group">
+                <label>Work Email</label>
+                <input type="email" name="work_email" required>
+            </div>
+            <div class="form-group">
+                <label>Company Website</label>
+                <input type="url" name="company_website" placeholder="https://">
+            </div>
+            <div class="form-group">
+                <label>Partnership Interest</label>
+                <select name="partnership_interest" required>
+                    <option>Subcontracting</option>
+                    <option>Prime Partnership</option>
+                    <option>Recruiting Partnership</option>
+                    <option>Technology Alliance</option>
+                    <option>Joint Bid</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>NAICS / Certifications</label>
+                <input type="text" name="naics_certifications" placeholder="Example: 541511, SBA 8(a), HUBZone">
+            </div>
+            <div class="form-group">
+                <label>Current Opportunity Name</label>
+                <input type="text" name="current_opportunity_name">
+            </div>
+            <div class="form-group">
+                <label>Deadline Date</label>
+                <input type="date" name="deadline_date">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="4" placeholder="Tell us about the partnership or opportunity you want to discuss."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Explore Partnership</button>
+
+        </form>
+    </div>
+</main>
     <footer>
         <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
             <div style="max-width:400px;">
