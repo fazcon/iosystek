@@ -172,7 +172,7 @@
         </div>
 
         <div class="form-container">
-            <form action="https://formspree.io/f/xeevarql" method="POST">
+            <form action="https://formspree.io/f/xeevarql" method="POST" enctype="multipart/form-data">
                 <input type="hidden" name="Inquiry Type" value="Careers">
                 <input type="hidden" name="Submission Type" value="Resume Submission">
 
@@ -257,8 +257,9 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Resume Link</label>
-                    <input type="url" name="resume_link" placeholder="Paste a Google Drive, Dropbox, OneDrive, or LinkedIn resume link">
+                    <label>Attach Resume</label>
+                    <input type="file" name="resume_file" accept=".pdf,.doc,.docx">
+                    <small style="display:block; margin-top:8px; color:#64748b;">Accepted formats: PDF, DOC, DOCX</small>
                 </div>
 
                 <div class="form-group">
