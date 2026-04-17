@@ -11,91 +11,6 @@
             window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
             formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
     </script>
-    <!-- <style>
-        .career-hero-actions {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-            margin-top: 28px;
-        }
-
-        .career-intro {
-            max-width: 820px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .career-benefits-section {
-            padding-top: 20px;
-            padding-bottom: 30px;
-        }
-
-        .career-benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 24px;
-            margin-top: 10px;
-        }
-
-        .career-benefits-grid .card-content {
-            padding: 28px;
-        }
-
-        .career-benefits-grid h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-size: 1.45rem;
-            font-weight: 700;
-            line-height: 1.25;
-        }
-
-        .career-benefits-grid p {
-            margin: 0;
-            font-size: 1rem;
-            line-height: 1.8;
-        }
-
-        .career-role-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 28px;
-            margin-top: 10px;
-        }
-
-        .career-role-grid .card-content {
-            padding: 30px;
-        }
-
-        .career-role-tag {
-            font-size: 0.78rem;
-            color: var(--secondary);
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-        }
-
-        .career-role-grid h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-size: 1.45rem;
-            line-height: 1.3;
-        }
-
-        .career-side-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 28px;
-        }
-
-        @media (max-width: 900px) {
-            .career-benefits-grid,
-            .career-side-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style> -->
 </head>
 <body>
     <header>
@@ -106,11 +21,11 @@
             <a href="services.html">Services</a>
             <a href="talent-solutions.html">Talent</a>
             <a href="careers.html">Careers</a>
-            <a href="contact.html" class="btn btn-primary" style="padding: 10px 20px; color:white;">Contact</a>
+            <a href="contact.html" class="btn btn-primary nav-contact-btn">Contact</a>
         </nav>
     </header>
 
-    <section class="hero" style='background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1600");'>
+    <section class="hero career-hero" style='background-image: url("https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1600");'>
         <div class="hero-content">
             <h1>Build Your Career With IOSYSTEK</h1>
             <p>Explore opportunities in cloud, DevOps, data, security, and architecture, or submit your resume to be considered for upcoming roles.</p>
@@ -121,10 +36,17 @@
         </div>
     </section>
 
+    <section class="section container career-intro-section">
+        <div class="career-intro">
+            <h2>Build the Future of Tech</h2>
+            <p>Work with top tier government contractors and innovative enterprises on projects that matter.</p>
+        </div>
+    </section>
+
     <section class="section container career-benefits-section">
         <div class="career-intro">
-            <h2 style="margin-bottom:18px;">Why Work With Us</h2>
-            <p style="margin-bottom:34px;">Work with top tier government contractors and innovative enterprises on projects that matter. We value delivery, learning, trust, and long term growth.</p>
+            <h2>Why Work With Us</h2>
+            <p>Work with top tier government contractors and innovative enterprises on projects that matter. We value delivery, learning, trust, and long term growth.</p>
         </div>
 
         <div class="career-benefits-grid">
@@ -151,10 +73,10 @@
         </div>
     </section>
 
-    <section id="open-roles" class="section container" style="padding-top:30px; padding-bottom:40px;">
+    <section id="open-roles" class="section container career-open-roles-section">
         <div class="career-intro">
-            <h2 style="margin-bottom:18px;">Available Opportunities</h2>
-            <p style="margin-bottom:40px;">Browse current focus areas. If you do not see a perfect fit, submit your resume for future openings.</p>
+            <h2>Available Opportunities</h2>
+            <p>Browse current focus areas. If you do not see a perfect fit, submit your resume for future openings.</p>
         </div>
 
         <div class="career-role-grid">
@@ -162,9 +84,9 @@
                 <div class="card-content">
                     <p class="career-role-tag">Cloud</p>
                     <h3>Cloud Engineer</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Remote / Hybrid</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> AWS, Azure, Terraform, automation</p>
+                    <p><strong>Location:</strong> Remote / Hybrid</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> AWS, Azure, Terraform, automation</p>
                     <p>Support cloud operations, migration, and modernization projects across client environments.</p>
                 </div>
             </div>
@@ -173,9 +95,9 @@
                 <div class="card-content">
                     <p class="career-role-tag">DevOps</p>
                     <h3>DevOps Engineer</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Remote / Hybrid</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> CI/CD, IaC, containers, monitoring</p>
+                    <p><strong>Location:</strong> Remote / Hybrid</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> CI/CD, IaC, containers, monitoring</p>
                     <p>Help teams improve release velocity, automate deployments, and strengthen platform reliability.</p>
                 </div>
             </div>
@@ -184,9 +106,9 @@
                 <div class="card-content">
                     <p class="career-role-tag">Data</p>
                     <h3>Data Engineer</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Remote / Hybrid</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> ETL, pipelines, lakehouse, analytics</p>
+                    <p><strong>Location:</strong> Remote / Hybrid</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> ETL, pipelines, lakehouse, analytics</p>
                     <p>Build and optimize data platforms, integration workflows, and cloud based analytics solutions.</p>
                 </div>
             </div>
@@ -195,9 +117,9 @@
                 <div class="card-content">
                     <p class="career-role-tag">Security</p>
                     <h3>Security Engineer</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Remote / Hybrid / Onsite</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> Cloud security, IAM, compliance</p>
+                    <p><strong>Location:</strong> Remote / Hybrid / Onsite</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> Cloud security, IAM, compliance</p>
                     <p>Support secure architectures, control implementation, and continuous improvement across environments.</p>
                 </div>
             </div>
@@ -206,9 +128,9 @@
                 <div class="card-content">
                     <p class="career-role-tag">Architecture</p>
                     <h3>Solution Architect</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Remote / Hybrid</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> Modernization, integration, cloud strategy</p>
+                    <p><strong>Location:</strong> Remote / Hybrid</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> Modernization, integration, cloud strategy</p>
                     <p>Lead technical solution design and help clients move from concept to implementation.</p>
                 </div>
             </div>
@@ -217,43 +139,43 @@
                 <div class="card-content">
                     <p class="career-role-tag">Cleared</p>
                     <h3>Cleared Technical Talent</h3>
-                    <p style="margin-bottom:12px;"><strong>Location:</strong> Hybrid / Onsite</p>
-                    <p style="margin-bottom:12px;"><strong>Type:</strong> Contract or Full Time</p>
-                    <p style="margin-bottom:12px;"><strong>Focus:</strong> Public Trust, Secret, TS/SCI roles</p>
+                    <p><strong>Location:</strong> Hybrid / Onsite</p>
+                    <p><strong>Type:</strong> Contract or Full Time</p>
+                    <p><strong>Focus:</strong> Public Trust, Secret, TS/SCI roles</p>
                     <p>We regularly support programs that require cleared engineers, architects, and technical specialists.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section container" style="padding-top:30px; padding-bottom:40px;">
+    <section class="section container career-side-section">
         <div class="career-side-grid">
             <div class="card">
                 <div class="card-content">
-                    <h3 style="color: var(--primary); margin-bottom: 15px;">Our Hiring Process</h3>
-                    <p style="margin-bottom: 12px;"><strong>1. Apply</strong><br>Submit your resume and tell us what role interests you.</p>
-                    <p style="margin-bottom: 12px;"><strong>2. Review</strong><br>We assess your background against current and upcoming needs.</p>
-                    <p style="margin-bottom: 12px;"><strong>3. Connect</strong><br>If aligned, we will reach out for an initial conversation.</p>
+                    <h3>Our Hiring Process</h3>
+                    <p><strong>1. Apply</strong><br>Submit your resume and tell us what role interests you.</p>
+                    <p><strong>2. Review</strong><br>We assess your background against current and upcoming needs.</p>
+                    <p><strong>3. Connect</strong><br>If aligned, we will reach out for an initial conversation.</p>
                     <p><strong>4. Present</strong><br>Qualified candidates may be introduced to clients or project teams.</p>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-content">
-                    <h3 style="color: var(--primary); margin-bottom: 15px;">Before You Apply</h3>
-                    <p style="margin-bottom: 12px;">Please share the strongest and most current version of your resume.</p>
-                    <p style="margin-bottom: 12px;">Include your target role, work location preference, and any relevant certifications.</p>
-                    <p style="margin-bottom: 12px;">If you hold an active clearance, note the level in your submission.</p>
+                    <h3>Before You Apply</h3>
+                    <p>Please share the strongest and most current version of your resume.</p>
+                    <p>Include your target role, work location preference, and any relevant certifications.</p>
+                    <p>If you hold an active clearance, note the level in your submission.</p>
                     <p>We review every submission and respond when there is a strong match.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resume-form" class="section container">
+    <section id="resume-form" class="section container career-resume-section">
         <div class="career-intro">
-            <h2 style="margin-bottom:18px;">Submit Your Resume</h2>
-            <p style="margin-bottom:30px;">Do not see the right opening yet? Join our talent network and be considered for future roles.</p>
+            <h2>Submit Your Resume</h2>
+            <p>Do not see the right opening yet? Join our talent network and be considered for future roles.</p>
         </div>
 
         <div class="form-container">
@@ -356,11 +278,11 @@
         </div>
     </section>
 
-    <section class="section container" style="padding-top:20px;">
+    <section class="section container career-network-section">
         <div class="card">
-            <div class="card-content" style="text-align:center;">
-                <h3 style="color: var(--primary); margin-bottom: 12px;">Join Our Talent Network</h3>
-                <p style="max-width:760px; margin:0 auto 20px;">Stay connected for future opportunities in cloud, data, DevOps, security, AI, and architecture. If your background is a fit, our team will reach out.</p>
+            <div class="card-content career-network-card">
+                <h3>Join Our Talent Network</h3>
+                <p>Stay connected for future opportunities in cloud, data, DevOps, security, AI, and architecture. If your background is a fit, our team will reach out.</p>
                 <a href="#resume-form" class="btn btn-primary">Join Talent Network</a>
             </div>
         </div>
