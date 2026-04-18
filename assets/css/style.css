@@ -559,7 +559,7 @@ footer {
     color: var(--primary);
     margin: 0 auto 18px;
     font-weight: 800;
-    max-width: 980px;
+    max-width: 900px;
 }
 
 .experience-header p {
