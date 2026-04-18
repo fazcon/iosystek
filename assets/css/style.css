@@ -533,8 +533,8 @@ footer {
 
 /* Homepage experience section */
 .experience-strip {
+    padding: 45px 5% 70px;
     background: var(--light);
-    padding: 90px 5%;
 }
 
 .experience-header {
