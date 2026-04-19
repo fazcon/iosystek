@@ -1,12 +1,16 @@
 :root {
-    --primary: #1B264F;
-    --secondary: #6366f1; /* Purple/Blue accent */
-    --hero-bg: #1e1b4b; /* Dark Indigo */
-    --light: #F8FAFC;
+    --primary: #1b2554;
+    --secondary: #6b8fd4;
+    --accent: #6366f1; /* Added for the purple button/border accents in screenshot */
+    --light: #f8faff;
+    --dark: #0f172a;
+    --text: #42506b;
     --white: #ffffff;
-    --text: #334155;
-    --dark: #0F172A;
+    --overlay: rgba(26, 33, 86, 0.88); /* Darkened for better text contrast */
+    --panel-bg: #ffffff;
 }
+
+/* --- Keep all your existing *, body, header, nav, and .container styles here --- */
 
 * {
     box-sizing: border-box;
@@ -15,158 +19,201 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text);
     background: var(--white);
+    overflow-x: hidden;
 }
 
-/* Header & Nav */
 header {
     background: var(--white);
     padding: 0.8rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
-.logo-container img { height: 60px; }
+.logo-container img {
+    height: 72px;
+    width: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 nav a {
-    margin-left: 20px;
+    margin-left: 25px;
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
     font-size: 0.9rem;
+    transition: 0.3s;
+    white-space: nowrap;
 }
 
-/* Hero Section */
-.hero-split {
-    background: linear-gradient(rgba(30, 27, 75, 0.85), rgba(30, 27, 75, 0.85)), 
+/* --- NEW FEATURE: INDEX PAGE HERO (Split Layout) --- */
+
+.hero-home {
+    position: relative;
+    padding: 80px 5%;
+    background: linear-gradient(var(--overlay), var(--overlay)), 
                 url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1600');
     background-size: cover;
     background-position: center;
-    padding: 100px 5%;
     color: white;
-}
-
-.hero-split-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 60px;
+    min-height: 600px;
+    display: flex;
     align-items: center;
 }
 
-.hero-eyebrow {
-    display: inline-block;
-    padding: 8px 20px;
-    background: rgba(255,255,255,0.1);
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    margin-bottom: 20px;
+.hero-home-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.25fr 1fr; /* Exact split from screenshot */
+    gap: 60px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
 }
 
-.hero-copy h1 {
-    font-size: 3.8rem;
-    line-height: 1.1;
-    margin-bottom: 25px;
+.hero-home-copy h1 {
+    font-size: 4.2rem;
+    line-height: 1.05;
     font-weight: 800;
+    margin-bottom: 24px;
+    letter-spacing: -0.04em;
 }
 
-.hero-copy p {
+.hero-home-copy p {
     font-size: 1.1rem;
-    margin-bottom: 35px;
+    line-height: 1.7;
+    margin-bottom: 30px;
     opacity: 0.9;
 }
 
-.hero-tags {
+.hero-home-tags {
     display: flex;
-    gap: 15px;
-    font-size: 0.85rem;
-    opacity: 0.8;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-/* Help Panel */
-.hero-help-panel {
-    background: var(--white);
+/* --- Floating Side Panel (White Card) --- */
+
+.help-panel {
+    background: var(--panel-bg);
     color: var(--primary);
+    border-radius: 28px;
     padding: 40px;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
 }
 
-.hero-help-panel h2 { margin-bottom: 15px; font-size: 1.5rem; }
+.help-panel h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
 
-.hero-help-grid {
+.help-panel > p {
+    color: var(--text);
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.help-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 16px;
 }
 
-.hero-help-card {
-    background: #f1f5f9;
-    padding: 20px;
-    border-radius: 12px;
-    border-left: 4px solid var(--secondary);
-}
-
-.hero-help-card h3 { font-size: 1.1rem; margin-bottom: 5px; }
-.hero-help-card p { font-size: 0.9rem; line-height: 1.4; color: var(--text); }
-
-/* Trust Bar */
-.trust-bar {
-    padding: 60px 5%;
+.help-card {
     background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 5px solid var(--accent); /* Purple accent from image */
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.help-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+
+.help-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text);
+}
+
+/* --- Mission Critical Bar (Trust Bar) --- */
+
+.trusted-experience {
+    background: #f1f5f9;
+    padding: 60px 5%;
     text-align: center;
 }
 
-.trust-bar h2 { font-size: 1.4rem; margin-bottom: 30px; color: var(--primary); }
+.trusted-experience h2 {
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+    color: var(--primary);
+}
 
-.trust-grid {
+.trusted-grid {
     display: flex;
     justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
 }
 
-.trust-pill {
+.trusted-pill {
     background: white;
-    padding: 12px 24px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-weight: 600;
+    padding: 18px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     color: var(--primary);
 }
 
-/* Buttons */
-.btn {
-    padding: 14px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 700;
-    display: inline-block;
-    transition: 0.3s;
+/* --- Buttons (Specific for Hero) --- */
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
 }
 
-.btn-primary { background: var(--secondary); color: white; }
-.btn-light { background: white; color: var(--primary); margin-left: 10px; }
+.btn-outline-white {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
 
-/* Footer */
-footer { background: var(--dark); color: white; padding: 60px 5%; }
-.footer-flex { display: flex; justify-content: space-between; flex-wrap: wrap; }
-.footer-logo-img { height: 40px; filter: invert(1); margin-bottom: 20px; }
-.footer-links a { display: block; color: rgba(255,255,255,0.7); text-decoration: none; margin-bottom: 10px; }
+/* --- Responsive Adjustments --- */
 
-@media (max-width: 992px) {
-    .hero-split-content { grid-template-columns: 1fr; text-align: center; }
-    .hero-copy h1 { font-size: 2.8rem; }
-    .hero-tags { justify-content: center; }
+@media (max-width: 1024px) {
+    .hero-home-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-home-copy h1 { font-size: 3rem; }
+    .help-panel { max-width: 600px; margin: 0 auto; }
+}
+
+@media (max-width: 600px) {
+    .help-grid { grid-template-columns: 1fr; }
+    .hero-home-copy h1 { font-size: 2.5rem; }
 }
