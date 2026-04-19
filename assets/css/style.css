@@ -808,3 +808,34 @@ footer {
 .hero.hero-split p {
   margin-bottom: 24px;
 }
+/* =========================================================
+   HOMEPAGE ONLY – Reduce hero height & reveal next section
+   ========================================================= */
+
+/* Reduce hero vertical size (home page hero only) */
+.hero.hero-split {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  min-height: auto; /* critical: stop hero from forcing full screen */
+}
+
+/* Slightly reduce headline size on home hero only */
+.hero.hero-split h1 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+}
+
+/* Tighten spacing under hero content */
+.hero.hero-split p {
+  margin-bottom: 20px;
+}
+
+/* Compress right-side "How we help" panel */
+.hero.hero-split .hero-help-panel {
+  padding: 24px 24px;
+}
+
+/* Pull Experience section upward for immediate visibility */
+.experience-strip {
+  margin-top: -28px;
+}
