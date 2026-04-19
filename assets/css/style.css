@@ -664,3 +664,91 @@ footer {
         margin-left: 0;
     }
 }
+/* =========================================================
+   Experience Across Mission Critical Organizations
+   (Additive styles – safe for all pages)
+   ========================================================= */
+
+.experience-strip {
+  position: relative;
+  padding: 85px 5%;
+  background-image: url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1600");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.experience-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(248, 250, 252, 0.9);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.experience-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 48px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Pills grid */
+.experience-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+/* Clickable pill */
+.experience-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  padding: 20px;
+  background: #ffffff;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 1px solid #e5eaf3;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+  transition: all 0.35s ease;
+}
+
+/* Hover / focus */
+.experience-pill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.18);
+  color: var(--secondary);
+}
+
+/* Scroll animation */
+.experience-pill.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-pill {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .experience-pill {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
