@@ -752,3 +752,21 @@ footer {
     transition: none;
   }
 }
+/* =========================================================
+   Home page hero size adjustment
+   ========================================================= */
+
+/* Reduce banner height so content below is visible */
+.hero.hero-split {
+  padding: 65px 5% 70px;
+}
+
+/* Reduce headline size slightly for balance */
+.hero.hero-split h1 {
+  font-size: 3.4rem;
+}
+
+/* Reduce spacing under hero actions */
+.hero-actions {
+  margin-bottom: 20px;
+}
