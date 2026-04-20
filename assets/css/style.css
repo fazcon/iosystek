@@ -936,19 +936,11 @@ footer {
 }
 
 /* =========================================================
-   Homepage only – center-align second line in How we help cards
+   Careers page – center-align hero subtitle
    ========================================================= */
 
-/* Target ONLY homepage hero cards */
-/* .hero.hero-split .hero-help-card p {
+.career-hero .hero-content p {
   text-align: center;
-} */
-
-/* =========================================================
-   Inner pages – force banner subtitle left aligned
-   ========================================================= */
-
-/* Any hero that is NOT the homepage split hero */
-.hero:not(.hero-split) p {
-  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
 }
