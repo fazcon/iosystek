@@ -965,16 +965,17 @@ footer {
 }
 
 /* ==========================================
-   Cloud page – tighten spacing before How We Help
+   Cloud page – remove excess gap before How We Help
    ========================================== */
 
-/* Reduce top padding of the section that follows the intro */
-.hero + .section.container + .section.container {
+/* Pull How We Help section upward */
+.cloud-page h2 {
+  margin-top: 0;
+}
+
+/* Reduce top padding on the section containing How We Help */
+.cloud-page .section {
   padding-top: 40px;
 }
-
-.card-content {
-  border-bottom: 5px solid var(--secondary);
-}
-
+``
 
