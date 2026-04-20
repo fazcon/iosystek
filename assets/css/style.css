@@ -1044,3 +1044,8 @@ footer {
   flex-direction: column;
   height: 100%;
 }
+
+/* Utility: remove bottom margin when needed (service pages only) */
+.service-page .no-margin {
+  margin-bottom: 0;
+}
