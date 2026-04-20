@@ -1022,3 +1022,25 @@ footer {
 .cloud-page .section:nth-of-type(2) h2 {
   margin-top: 0;
 }
+
+/* ==========================================
+   Fix: align horizontal line in How We Help cards
+   (SAFE – no layout changes elsewhere)
+   ========================================== */
+
+/* Make grid items stretch to the same height */
+.grid {
+  align-items: stretch;
+}
+
+/* Ensure cards fill full height */
+.card {
+  display: flex;
+}
+
+/* Make card-content fill card height */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
