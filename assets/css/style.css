@@ -920,3 +920,17 @@ footer {
 .experience-logos {
   margin-top: 20px; /* was ~40px, now half */
 }
+/* ==========================================
+   Home hero – Explore Services button
+   ========================================== */
+
+.hero-actions .btn-light {
+  background: #ffffff;
+  color: var(--primary);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.hero-actions .btn-light:hover {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+}
