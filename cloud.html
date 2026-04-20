@@ -9,8 +9,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
 
-<body class="cloud-page">
+<body>
 
+<!-- Header -->
 <header>
   <a href="index.html" class="logo-container">
     <img src="assets/images/logo.svg" alt="IOSYSTEK Logo" />
@@ -26,11 +27,9 @@
   </nav>
 </header>
 
-<!-- Hero Section -->
-<section
-  class="hero"
-  style='background-image:url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600");'
->
+<!-- Hero -->
+<section class="hero"
+  style='background-image:url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1600");'>
   <div class="hero-content">
     <h1>Cloud Modernization</h1>
     <p>
@@ -40,20 +39,23 @@
   </div>
 </section>
 
-<!-- Intro Section -->
-<section class="section container">
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
+<!-- Intro Section (Reduced bottom spacing) -->
+<section class="section container" style="padding-bottom:30px;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:flex-start;">
     <div>
       <h2>Cloud Platforms That Support Real Operations</h2>
 
       <p>
-        Modern cloud environments should accelerate delivery, ensure reliability, and optimize costs instead of creating new complexity or risk. 
-        <b>IOSYSTEK</b> helps organizations design, modernize, and operate cloud environments built for mission-critical workloads and business priorities.
+        Modern cloud environments should accelerate delivery, improve reliability,
+        and optimize costs — not introduce new complexity or risk.
+        <strong>IOSYSTEK</strong> helps organizations design, modernize, and operate
+        cloud environments built for mission‑critical workloads.
       </p>
+
       <p>
-        Our work is led by senior engineers and architects who design and
-        implement solutions alongside your teams, with a strong focus on
-        security, automation, and measurable outcomes.
+        Our work is led by senior engineers and architects who design and implement
+        solutions alongside your teams, with a strong focus on security, automation,
+        and measurable outcomes.
       </p>
     </div>
 
@@ -65,18 +67,18 @@
   </div>
 </section>
 
-<!-- How We Help -->
-<section class="section container">
-  <h2>How We Help</h2>
+<!-- How We Help (Reduced top spacing) -->
+<section class="section container" style="padding-top:25px;">
+  <h2 style="margin-top:0;">How We Help</h2>
 
-  <div class="grid" style="margin-top:40px;">
+  <div class="grid" style="margin-top:30px;">
     <div class="card">
       <div class="card-content">
         <h3>Cloud Strategy & Architecture</h3>
         <p>
-          We assess your current environment, business objectives, and
-          regulatory requirements to design cloud architectures that are
-          secure, scalable, and realistic to operate.
+          We assess your current environment, business objectives, and regulatory
+          requirements to design cloud architectures that are secure, scalable,
+          and practical to operate.
         </p>
         <p>
           Our teams create actionable roadmaps, reference architectures, and
@@ -89,9 +91,9 @@
       <div class="card-content">
         <h3>Migration & Modernization</h3>
         <p>
-          We migrate and modernize applications and infrastructure using
-          proven patterns that minimize disruption while improving
-          scalability and performance.
+          We modernize applications and infrastructure using proven migration
+          patterns that minimize disruption while improving scalability
+          and performance.
         </p>
         <p>
           This includes re‑hosting, re‑platforming, refactoring, and
@@ -104,13 +106,13 @@
       <div class="card-content">
         <h3>Automation & Cloud Operations</h3>
         <p>
-          Automation is core to our delivery approach. We implement
-          Infrastructure as Code, CI/CD pipelines, and operational automation
-          to reduce manual effort and increase consistency.
+          Automation is central to our delivery model. We implement Infrastructure
+          as Code, CI/CD pipelines, and operational automation to reduce manual
+          effort and improve system consistency.
         </p>
         <p>
-          This enables faster delivery, improved reliability, and lower
-          operational overhead.
+          This enables faster delivery, greater reliability, and lower operational
+          overhead.
         </p>
       </div>
     </div>
@@ -119,9 +121,8 @@
       <div class="card-content">
         <h3>Security & Compliance</h3>
         <p>
-          Security is built into every cloud solution we deliver. We design
-          architectures that align with zero‑trust principles and regulatory
-          requirements.
+          Security is embedded in every solution we deliver. We align designs with
+          zero‑trust principles and regulatory requirements.
         </p>
         <p>
           Our experience includes government and regulated environments where
@@ -134,8 +135,8 @@
       <div class="card-content">
         <h3>Cost Optimization & Governance</h3>
         <p>
-          We help organizations establish financial and operational controls
-          that balance flexibility with accountability.
+          We help organizations establish financial and operational controls that
+          balance flexibility with accountability.
         </p>
         <p>
           This includes cost visibility, guardrails, and optimization practices
@@ -148,7 +149,7 @@
 
 <!-- Who We Serve -->
 <section class="section container">
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:flex-start;">
     <div>
       <h2>Who We Support</h2>
       <p>
@@ -181,14 +182,13 @@
   <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
 </section>
 
+<!-- Footer -->
 <footer>
   <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
     <div style="max-width:400px;">
-      <img
-        src="assets/images/logo.svg"
-        alt="IOSYSTEK Logo"
-        style="height:50px; filter:invert(1); margin-bottom:20px;"
-      />
+      <img src="assets/images/logo.svg"
+           alt="IOSYSTEK Logo"
+           style="height:50px; filter:invert(1); margin-bottom:20px;" />
       <p style="opacity:0.7;">
         Premier technology consulting and niche staffing for government
         contractors and tech‑driven enterprises.
