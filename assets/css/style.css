@@ -934,3 +934,12 @@ footer {
   background: rgba(255, 255, 255, 0.92);
   color: var(--primary);
 }
+
+/* =========================================================
+   Homepage only – center-align second line in How we help cards
+   ========================================================= */
+
+/* Target ONLY homepage hero cards */
+.hero.hero-split .hero-help-card p {
+  text-align: center;
+}
