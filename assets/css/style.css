@@ -964,18 +964,44 @@ footer {
   border-left-color: var(--secondary);
 }
 
-/* ==========================================
-   Cloud page – remove excess gap before How We Help
-   ========================================== */
+/* =====================================================
+   CLOUD PAGE – FIX SECTION SPACING AND CARD ALIGNMENT
+   ===================================================== */
 
-/* Pull How We Help section upward */
-.cloud-page h2 {
+/* ---- FIX 1: Remove excess gap before "How We Help" ---- */
+
+/* Kill bottom padding of intro section */
+.cloud-page .section:first-of-type {
+  padding-bottom: 20px;
+}
+
+/* Reduce top padding of How We Help section */
+.cloud-page .section:nth-of-type(2) {
+  padding-top: 30px;
+}
+
+/* Remove default margin from the section heading */
+.cloud-page .section:nth-of-type(2) h2 {
   margin-top: 0;
 }
 
-/* Reduce top padding on the section containing How We Help */
-.cloud-page .section {
-  padding-top: 40px;
+
+/* ---- FIX 2: Force equal-height cards (align blue lines) ---- */
+
+.cloud-page .grid {
+  display: grid;
+  align-items: stretch;
 }
-``
+
+/* Make cards full height */
+.cloud-page .card {
+  display: flex;
+}
+
+/* Push bottom border to same baseline */
+.cloud-page .card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
