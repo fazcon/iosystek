@@ -964,4 +964,17 @@ footer {
   border-left-color: var(--secondary);
 }
 
+/* ==========================================
+   Cloud page – tighten spacing before How We Help
+   ========================================== */
+
+/* Reduce top padding of the section that follows the intro */
+.hero + .section.container + .section.container {
+  padding-top: 40px;
+}
+
+.card-content {
+  border-bottom: 5px solid var(--secondary);
+}
+
 
