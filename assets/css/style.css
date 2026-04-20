@@ -856,3 +856,22 @@ footer {
   margin-top: -45px;
   padding-top: 45px; /* keeps content breathing */
 }
+/* ==========================================
+   Fix: Keep "How we help" fully inside banner
+   (Home page hero only)
+   ========================================== */
+
+/* Ensure hero background wraps both columns */
+.hero.hero-split {
+  padding-bottom: 60px; /* extends background */
+}
+
+/* Pull the help panel upward slightly */
+.hero.hero-split .hero-help-panel {
+  margin-top: -20px;
+}
+
+/* Prevent panel from pushing hero height */
+.hero-split-content {
+  align-items: center;
+}
