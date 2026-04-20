@@ -939,7 +939,18 @@ footer {
    Careers page – center-align hero subtitle
    ========================================================= */
 
-.career-hero .hero-content p {
+/* .career-hero .hero-content p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+/* =========================================================
+   Inner pages only – center-align hero subtitle
+   (Exclude index page hero)
+   ========================================================= */
+
+.hero:not(.hero-split) .hero-content p {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
