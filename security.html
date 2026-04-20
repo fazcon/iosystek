@@ -4,65 +4,188 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Security Engineering | IOSYSTEK</title>
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | IOSYSTEK</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-            formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
-    </script>
-</head>
+<body class="service-page">
 
-<section class="hero" style='background-image:url("https://images.unsplash.com/photo-1510511450819-1f8d139dacc7?auto=format&fit=crop&q=80&w=1600");'>
+<header>
+  <a href="index.html" class="logo-container">
+    <img src="assets/images/logo.svg" alt="IOSYSTEK Logo" />
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="talent-solutions.html">Talent</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero"
+  style='background-image:url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1600");'>
   <div class="hero-content">
     <h1>Security Engineering</h1>
-    <p>Security built into systems, delivery, and operations — not bolted on later.</p>
+    <p>
+      Secure‑by‑design architecture and delivery for regulated,
+      mission‑critical environments.
+    </p>
   </div>
 </section>
 
+<!-- Intro -->
 <section class="section container">
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:flex-start;">
     <div>
-      <h2>Secure‑by‑Design Delivery</h2>
+      <h2>Security Built Into Delivery</h2>
       <p>
-        IOSYSTEK embeds security into architecture, cloud platforms, and delivery pipelines to reduce
-        risk while enabling speed. We specialize in regulated and high‑stakes environments.
+        Modern security cannot be bolted on after systems are deployed.
+        IOSYSTEK helps organizations embed security into architecture,
+        development, and operations so systems remain resilient,
+        compliant, and auditable.
       </p>
-
-      <p>
-        Our engineers align security controls with real operational workflows and compliance requirements.
+      <p class="no-margin">
+        Our teams focus on practical, engineering‑driven security
+        that enables delivery while reducing risk.
       </p>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800"
-         class="img-wrap"
-         alt="Cybersecurity controls">
+    <img
+      src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+      alt="Security architecture"
+      class="img-wrap"
+    />
   </div>
 </section>
 
-    <footer>
-        <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
-            <div style="max-width:400px;">
-                <img src="assets/images/logo.svg" alt="IOSYSTEK Logo" style="height:50px; filter:invert(1); margin-bottom:20px;">
-                <p style="opacity:0.7;">Premier technology consulting and niche staffing for government contractors and tech-driven enterprises.</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom:20px;">Quick Links</h4>
-                <p><a href="services.html" style="color:white; opacity:0.7; text-decoration:none;">Our Services</a></p>
-                <p><a href="talent-solutions.html" style="color:white; opacity:0.7; text-decoration:none;">Talent Solutions</a></p>
-                <p><a href="contact.html" style="color:white; opacity:0.7; text-decoration:none;">Contact Us</a></p>
-            </div>
-        </div>
-    </footer>
+<!-- How We Help -->
+<section class="section container">
+  <h2>How We Help</h2>
+
+  <div class="grid" style="margin-top:40px;">
+    <div class="card">
+      <div class="card-content">
+        <h3>Secure Architecture & Design</h3>
+        <p>
+          We design secure cloud and hybrid architectures aligned
+          to zero‑trust principles and regulatory requirements.
+        </p>
+        <p>
+          This includes network segmentation, identity‑first design,
+          and defense‑in‑depth strategies.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Identity & Access Management</h3>
+        <p>
+          Strong identity controls are central to modern security.
+          We implement IAM solutions that enforce least privilege
+          and simplify access governance.
+        </p>
+        <p>
+          Our work spans cloud IAM, federation, and privileged
+          access management.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Secure DevOps & Automation</h3>
+        <p>
+          We embed security into CI/CD pipelines to reduce manual
+          controls and prevent misconfiguration.
+        </p>
+        <p>
+          This includes IaC security, pipeline hardening,
+          and continuous validation.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Compliance‑Aligned Engineering</h3>
+        <p>
+          We support environments with strict compliance requirements,
+          including government and regulated commercial systems.
+        </p>
+        <p>
+          Security controls are implemented in ways that are
+          auditable and operationally sustainable.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Risk Mitigation & Hardening</h3>
+        <p>
+          We assess environments for security gaps and implement
+          remediations that improve posture without breaking operations.
+        </p>
+        <p>
+          This includes configuration hardening and continuous monitoring.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who We Support -->
+<section class="section container">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:flex-start;">
+    <div>
+      <h2>Who We Support</h2>
+      <p>
+        IOSYSTEK supports government contractors, commercial
+        enterprises, and mid‑market organizations operating
+        in high‑risk and regulated environments.
+      </p>
+      <p class="no-margin">
+        We regularly work with security leaders, program managers,
+        and engineering teams responsible for protecting
+        mission‑critical systems.
+      </p>
+    </div>
+
+    <img
+      src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=800"
+      alt="Enterprise security operations"
+      class="img-wrap"
+    />
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section container" style="text-align:center;">
+  <h2>Ready to Improve Your Security Posture?</h2>
+  <p style="max-width:760px; margin:0 auto 30px;">
+    Let’s discuss how secure architecture and engineering
+    can reduce risk and support delivery.
+  </p>
+  <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+</section>
+
+<footer>
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+    <div style="max-width:400px;">
+      <img src="assets/images/logo.svg" alt="IOSYSTEK Logo"
+        style="height:50px; filter:invert(1); margin-bottom:20px;" />
+      <p style="opacity:0.7;">
+        Premier technology consulting and niche staffing for government contractors
+        and tech‑driven enterprises.
+      </p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>

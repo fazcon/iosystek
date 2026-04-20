@@ -4,65 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Technical Talent Solutions | IOSYSTEK</title>
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers | IOSYSTEK</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-    <script>
-            window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-            formbutton("submit", {action: "https://formspree.io/f/xeevarql"})
-    </script>
-</head>
+<body class="service-page">
 
-<section class="hero" style='background-image:url("https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1600");'>
+<header>
+  <a href="index.html" class="logo-container">
+    <img src="assets/images/logo.svg" alt="IOSYSTEK Logo" />
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="talent-solutions.html">Talent</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero"
+  style='background-image:url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=1600");'>
   <div class="hero-content">
     <h1>Technical Talent Solutions</h1>
-    <p>Senior engineers and architects who integrate fast and deliver real results.</p>
+    <p>
+      Senior engineers and architects who integrate quickly
+      and deliver real results.
+    </p>
   </div>
 </section>
 
+<!-- Intro -->
 <section class="section container">
-  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:center;">
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:flex-start;">
     <div>
       <h2>Experienced Talent, When You Need It</h2>
       <p>
-        We provide senior‑level cloud, DevOps, data, and security professionals who can ramp quickly
-        and contribute immediately.
+        When hiring pipelines are too slow or inflexible,
+        IOSYSTEK provides experienced technical professionals
+        who can contribute immediately.
       </p>
-
-      <p>
-        Flexible models support contract, long‑term, and regulated environments.
+      <p class="no-margin">
+        Our talent solutions focus on senior‑level practitioners
+        who understand delivery, not just resumes.
       </p>
     </div>
 
-    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=800"
-         class="img-wrap"
-         alt="Engineering team collaboration">
+    <img
+      src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800"
+      alt="Technical team collaboration"
+      class="img-wrap"
+    />
   </div>
 </section>
 
-    <footer>
-        <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
-            <div style="max-width:400px;">
-                <img src="assets/images/logo.svg" alt="IOSYSTEK Logo" style="height:50px; filter:invert(1); margin-bottom:20px;">
-                <p style="opacity:0.7;">Premier technology consulting and niche staffing for government contractors and tech-driven enterprises.</p>
-            </div>
-            <div>
-                <h4 style="margin-bottom:20px;">Quick Links</h4>
-                <p><a href="services.html" style="color:white; opacity:0.7; text-decoration:none;">Our Services</a></p>
-                <p><a href="talent-solutions.html" style="color:white; opacity:0.7; text-decoration:none;">Talent Solutions</a></p>
-                <p><a href="contact.html" style="color:white; opacity:0.7; text-decoration:none;">Contact Us</a></p>
-            </div>
-        </div>
-    </footer>
+<!-- How We Help -->
+<section class="section container">
+  <h2>How We Help</h2>
+
+  <div class="grid" style="margin-top:40px;">
+    <div class="card">
+      <div class="card-content">
+        <h3>Senior Engineering Talent</h3>
+        <p>
+          We provide senior cloud, DevOps, data, and security
+          engineers who can step into active environments
+          and deliver from day one.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Flexible Engagement Models</h3>
+        <p>
+          Support contract, contract‑to‑hire, and long‑term
+          needs without long hiring cycles or overhead.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Regulated & Cleared Talent</h3>
+        <p>
+          Access practitioners experienced with government,
+          compliance‑driven, and secure environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Rapid Response</h3>
+        <p>
+          We prioritize fast turnaround and precise alignment
+          between technical needs and candidate experience.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section container" style="text-align:center;">
+  <h2>Looking to Scale Your Team?</h2>
+  <p style="max-width:760px; margin:0 auto 30px;">
+    Let’s discuss how experienced technical talent
+    can help you move faster with less risk.
+  </p>
+  <a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+</section>
+
+<footer>
+  <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap;">
+    <div style="max-width:400px;">
+      <img src="assets/images/logo.svg" alt="IOSYSTEK Logo"
+        style="height:50px; filter:invert(1); margin-bottom:20px;" />
+      <p style="opacity:0.7;">
+        Premier technology consulting and niche staffing for government contractors
+        and tech‑driven enterprises.
+      </p>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
