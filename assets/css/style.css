@@ -940,6 +940,15 @@ footer {
    ========================================================= */
 
 /* Target ONLY homepage hero cards */
-.hero.hero-split .hero-help-card p {
+/* .hero.hero-split .hero-help-card p {
   text-align: center;
+} */
+
+/* =========================================================
+   Inner pages – force banner subtitle left aligned
+   ========================================================= */
+
+/* Any hero that is NOT the homepage split hero */
+.hero:not(.hero-split) p {
+  text-align: left;
 }
