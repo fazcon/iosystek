@@ -913,3 +913,10 @@ footer {
   background: var(--secondary);
   border-radius: 0 0 14px 14px;
 }
+/* ==========================================
+   Reduce gap between Experience title and cards
+   ========================================== */
+
+.experience-logos {
+  margin-top: 20px; /* was ~40px, now half */
+}
