@@ -330,3 +330,49 @@ footer a:hover {
     padding: 70px 5%;
   }
 }
+
+/* =========================================================
+   LEGACY LAYOUT COMPATIBILITY
+   Keeps existing pages working
+========================================================= */
+
+/* Restore generous section spacing for legacy pages */
+.section {
+  padding: 90px 5%;
+}
+
+/* Restore legacy heading spacing */
+h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/* Prevent cards from collapsing layout on old pages */
+.card {
+  display: block;
+}
+
+.card-content {
+  display: block;
+}
+/* =========================================================
+   MODERN SERVICE PAGE LAYOUT (OPT-IN)
+========================================================= */
+
+.cloud-page .section {
+  padding: 80px 5%;
+}
+
+.cloud-page .section--tight {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.cloud-page .card {
+  display: flex;
+}
+
+.cloud-page .card-content {
+  display: flex;
+  flex-direction: column;
+}
