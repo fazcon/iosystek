@@ -839,3 +839,20 @@ footer {
 .experience-strip {
   margin-top: -28px;
 }
+
+
+/* ==========================================
+   Reduce gap between Hero and Experience
+   (Home page only – safe override)
+   ========================================== */
+
+/* Reduce bottom spacing of the hero */
+.hero.hero-split {
+  padding-bottom: 25px;
+}
+
+/* Pull Experience section closer to hero */
+.experience-strip {
+  margin-top: -45px;
+  padding-top: 45px; /* keeps content breathing */
+}
