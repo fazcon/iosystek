@@ -1,0 +1,1119 @@
+:root {
+    --primary: #1B264F;
+    --secondary: #5FA8D3;
+    --accent: #274C77;
+    --light: #F8FAFC;
+    --dark: #0F172A;
+    --text: #334155;
+    --white: #ffffff;
+    --overlay: rgba(27, 38, 79, 0.85);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--text);
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--white);
+    padding: 0.8rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container img {
+    height: 72px;
+    width: auto;
+    display: block;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+nav a:hover {
+    color: var(--secondary);
+}
+
+/* Hero Sections with Backgrounds */
+.hero {
+    position: relative;
+    color: white;
+    padding: 90px 5%;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(27, 38, 79, 0.72);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-split-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(320px, 430px);
+    gap: 48px;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-copy {
+    max-width: 760px;
+}
+
+.hero-eyebrow {
+    display: inline-block;
+    padding: 14px 28px;
+    margin-bottom: 28px;
+    border-radius: 999px;
+    background: rgba(143, 156, 224, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.hero h1 {
+    font-size: 4.3rem;
+    margin-bottom: 24px;
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+}
+
+.hero p {
+    font-size: 1.15rem;
+    max-width: 760px;
+    margin: 0 0 34px;
+    opacity: 0.95;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.hero-tags {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    font-size: 0.98rem;
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-help-panel {
+    background: rgba(255, 255, 255, 0.96);
+    color: var(--primary);
+    border-radius: 28px;
+    padding: 38px 34px;
+    box-shadow: 0 18px 50px rgba(12, 20, 52, 0.18);
+}
+
+.hero-help-panel h2 {
+    font-size: 1.15rem;
+    margin-bottom: 18px;
+    color: var(--primary);
+    text-align: left;
+}
+
+.hero-help-panel > p {
+    color: var(--text);
+    margin-bottom: 22px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.hero-help-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.hero-help-card {
+    background: #f7f8fe;
+    border: 1px solid #dde3f2;
+    border-left: 4px solid #6e7ff1;
+    border-radius: 18px;
+    padding: 22px 20px;
+}
+
+.hero-help-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+.hero-help-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.section {
+    padding: 90px 5%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Image Grid and Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.4s;
+}
+
+.card-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 35px;
+    border-bottom: 5px solid var(--secondary);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.btn {
+    padding: 16px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    width: auto;
+}
+
+.btn-primary {
+    background: var(--secondary);
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    margin-left: 15px;
+}
+
+footer {
+    background: var(--dark);
+    color: white;
+    padding: 80px 5% 30px;
+}
+
+.footer-logo img {
+    height: 60px;
+    margin-bottom: 25px;
+    filter: brightness(0) invert(1);
+}
+
+/* Image classes for placeholder visuals */
+.img-wrap {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Contact Hub styles */
+.inquiry-selection-section {
+    padding: 60px 5%;
+}
+
+.inquiry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.inquiry-link-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    border-bottom: 5px solid var(--secondary);
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inquiry-link-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    border-bottom-color: var(--primary);
+}
+
+.inquiry-link-card h3 {
+    color: var(--primary) !important;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.inquiry-link-card .inquiry-tag {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--secondary);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Existing custom form wrapper kept */
+.custom-form-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+/* New form page support */
+.form-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+/* Request Talent form page fix */
+.form-container {
+    max-width: 760px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+.form-container form {
+    width: 100%;
+    display: block;
+}
+
+.form-container .form-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 22px;
+}
+
+.form-container .form-group label {
+    display: block !important;
+    width: 100%;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.form-container .form-group input,
+.form-container .form-group select,
+.form-container .form-group textarea {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d9e2ec;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: var(--text);
+    background: var(--white);
+    box-shadow: none;
+}
+
+.form-container .form-group input:focus,
+.form-container .form-group select:focus,
+.form-container .form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(95, 168, 211, 0.15);
+}
+
+.form-container .form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.form-container .form-group select[multiple] {
+    min-height: 150px;
+}
+
+.form-container .btn,
+.form-container button.btn,
+.form-container input[type="submit"],
+.form-container button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 22px;
+    }
+
+    .form-container .form-group input,
+    .form-container .form-group select,
+    .form-container .form-group textarea {
+        padding: 12px 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 22px;
+    }
+
+    .form-container .form-group input,
+    .form-container .form-group select,
+    .form-container .form-group textarea {
+        padding: 12px 14px;
+    }
+}
+/* Careers page */
+.nav-contact-btn {
+    padding: 10px 20px;
+    color: var(--white);
+}
+
+.career-hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.career-intro {
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.career-intro-section {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.career-intro p,
+.career-benefits-section .career-intro p,
+.career-open-roles-section .career-intro p,
+.career-resume-section .career-intro p {
+    margin-bottom: 0;
+}
+.career-benefits-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.career-benefits-section .career-intro p,
+.career-open-roles-section .career-intro p {
+    margin-bottom: 34px;
+}
+
+.career-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.career-benefits-grid .card-content {
+    padding: 28px;
+}
+
+.career-benefits-grid h3,
+.career-side-grid h3,
+.career-network-card h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.career-benefits-grid p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.career-open-roles-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.career-role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 28px;
+    margin-top: 10px;
+}
+
+.career-role-grid .card-content {
+    padding: 30px;
+}
+
+.career-role-tag {
+    font-size: 0.78rem;
+    color: var(--secondary);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.career-role-grid h3 {
+    color: var(--primary);
+    margin-bottom: 12px;
+    font-size: 1.45rem;
+    line-height: 1.3;
+}
+
+.career-role-grid .card-content p {
+    margin-bottom: 12px;
+}
+
+.career-role-grid .card-content p:last-child {
+    margin-bottom: 0;
+}
+
+.career-side-section {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.career-side-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+}
+
+.career-side-grid .card-content p {
+    margin-bottom: 12px;
+}
+
+.career-side-grid .card-content p:last-child {
+    margin-bottom: 0;
+}
+
+.career-resume-section .career-intro p {
+    margin-bottom: 30px;
+}
+
+.career-network-section {
+    padding-top: 20px;
+}
+
+.career-network-card {
+    text-align: center;
+}
+
+.career-network-card p {
+    max-width: 760px;
+    margin: 0 auto 20px;
+}
+
+@media (max-width: 900px) {
+    .career-benefits-grid,
+    .career-side-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .hero-split-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-copy {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero p,
+    .hero-tags {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-help-panel {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 70px 5%;
+        background-attachment: scroll;
+    }
+
+    .hero h1 {
+        font-size: 2.9rem;
+    }
+
+    .hero p {
+        font-size: 1.05rem;
+    }
+
+    .hero-help-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-tags {
+        gap: 14px;
+        font-size: 0.92rem;
+    }
+
+    .btn-light {
+        margin-left: 0;
+    }
+}
+/* =========================================================
+   Experience Across Mission Critical Organizations
+   (Additive styles – safe for all pages)
+   ========================================================= */
+
+.experience-strip {
+  position: relative;
+  padding: 85px 5%;
+  background-image: url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&q=80&w=1600");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.experience-strip {
+  margin-top: -25px;
+}
+
+.experience-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(248, 250, 252, 0.9);
+  backdrop-filter: blur(6px);
+  z-index: 1;
+}
+
+.experience-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.experience-container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 48px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* Pills grid */
+.experience-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+}
+
+/* Clickable pill */
+.experience-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70px;
+  padding: 20px;
+  background: #ffffff;
+  color: var(--primary);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 14px;
+  border: 1px solid #e5eaf3;
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.12);
+  transition: all 0.35s ease;
+}
+
+/* Hover / focus */
+.experience-pill:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 48px rgba(15, 23, 42, 0.18);
+  color: var(--secondary);
+}
+
+/* Scroll animation */
+.experience-pill.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-pill {
+  opacity: 0;
+  transform: translateY(25px);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .experience-pill {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+/* =========================================================
+   Home page hero size adjustment
+   ========================================================= */
+
+/* Reduce banner height so content below is visible */
+.hero.hero-split {
+  padding: 65px 5% 70px;
+}
+
+/* Reduce headline size slightly for balance */
+.hero.hero-split h1 {
+  font-size: 3.4rem;
+}
+
+/* Reduce spacing under hero actions */
+.hero-actions {
+  margin-bottom: 20px;
+}
+/* =========================================================
+   HOME HERO HEIGHT CONSTRAINT (critical fix)
+   ========================================================= */
+
+/* Limit hero to viewport height */
+.hero.hero-split {
+  min-height: calc(100vh - 88px); /* header height accounted */
+  padding: 50px 5% 55px;
+  display: flex;
+  align-items: center;
+}
+
+/* Prevent hero content from forcing extra height */
+.hero-split-content {
+  align-items: flex-start;
+}
+
+/* Slightly compress right-side panel */
+.hero-help-panel {
+  padding: 28px 26px;
+}
+
+/* Reduce headline footprint */
+.hero.hero-split h1 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+/* Reduce paragraph spacing */
+.hero.hero-split p {
+  margin-bottom: 24px;
+}
+/* =========================================================
+   HOMEPAGE ONLY – Reduce hero height & reveal next section
+   ========================================================= */
+
+/* Reduce hero vertical size (home page hero only) */
+.hero.hero-split {
+  padding-top: 45px;
+  padding-bottom: 40px;
+  min-height: auto; /* critical: stop hero from forcing full screen */
+}
+
+/* Slightly reduce headline size on home hero only */
+.hero.hero-split h1 {
+  font-size: 3.2rem;
+  line-height: 1.05;
+}
+
+/* Tighten spacing under hero content */
+.hero.hero-split p {
+  margin-bottom: 20px;
+}
+
+/* Compress right-side "How we help" panel */
+.hero.hero-split .hero-help-panel {
+  padding: 24px 24px;
+}
+
+/* Pull Experience section upward for immediate visibility */
+.experience-strip {
+  margin-top: -28px;
+}
+
+
+/* ==========================================
+   Reduce gap between Hero and Experience
+   (Home page only – safe override)
+   ========================================== */
+
+/* Reduce bottom spacing of the hero */
+.hero.hero-split {
+  padding-bottom: 25px;
+}
+
+/* Pull Experience section closer to hero */
+.experience-strip {
+  margin-top: -45px;
+  padding-top: 45px; /* keeps content breathing */
+}
+/* ==========================================
+   Fix: Keep "How we help" fully inside banner
+   (Home page hero only)
+   ========================================== */
+
+/* Ensure hero background wraps both columns */
+.hero.hero-split {
+  padding-bottom: 60px; /* extends background */
+}
+
+/* Pull the help panel upward slightly */
+.hero.hero-split .hero-help-panel {
+  margin-top: -20px;
+}
+
+/* Prevent panel from pushing hero height */
+.hero-split-content {
+  align-items: center;
+}
+
+/* ==========================================
+   Experience cards – single horizontal row
+   ========================================== */
+
+.experience-logos {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+/* Reduce card size */
+.experience-pill {
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  min-height: 56px;
+  line-height: 1.3;
+  text-align: center;
+}
+/* ==========================================
+   Experience card bottom accent line
+   ========================================== */
+
+.experience-pill {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bottom sky‑blue line */
+.experience-pill::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background: var(--secondary);
+  border-radius: 0 0 14px 14px;
+}
+/* ==========================================
+   Reduce gap between Experience title and cards
+   ========================================== */
+
+.experience-logos {
+  margin-top: 20px; /* was ~40px, now half */
+}
+/* ==========================================
+   Home hero – Explore Services button
+   ========================================== */
+
+.hero-actions .btn-light {
+  background: #ffffff;
+  color: var(--primary);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+.hero-actions .btn-light:hover {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   Inner pages only – center-align hero subtitle
+   (Exclude index page hero)
+   ========================================================= */
+
+.hero:not(.hero-split) .hero-content p {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =========================================================
+   Index page – interactive "How we help" cards
+   ========================================================= */
+
+/* Make cards feel clickable (home hero only) */
+.hero.hero-split .hero-help-card {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover / active state */
+.hero.hero-split .hero-help-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.20);
+  border-left-color: var(--secondary);
+}
+
+/* =====================================================
+   CLOUD PAGE – FIX SECTION SPACING AND CARD ALIGNMENT
+   ===================================================== */
+
+/* ---- FIX 1: Remove excess gap before "How We Help" ---- */
+
+/* Kill bottom padding of intro section */
+.cloud-page .section:first-of-type {
+  padding-bottom: 20px;
+}
+
+/* Reduce top padding of How We Help section */
+.cloud-page .section:nth-of-type(2) {
+  padding-top: 30px;
+}
+
+/* Remove default margin from the section heading */
+.cloud-page .section:nth-of-type(2) h2 {
+  margin-top: 0;
+}
+
+
+/* ---- FIX 2: Force equal-height cards (align blue lines) ---- */
+
+.cloud-page .grid {
+  display: grid;
+  align-items: stretch;
+}
+
+/* Make cards full height */
+.cloud-page .card {
+  display: flex;
+}
+
+/* Push bottom border to same baseline */
+.cloud-page .card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+/* =====================================================
+   CLOUD PAGE – REMOVE GAP BEFORE "HOW WE HELP"
+   ===================================================== */
+
+/* Remove bottom margin caused by intro grid wrapper */
+.cloud-page .section:first-of-type > div {
+  margin-bottom: 0;
+}
+
+/* Aggressively tighten space before How We Help */
+.cloud-page .section:nth-of-type(2) {
+  padding-top: 20px;
+}
+
+/* Remove default H2 top margin */
+.cloud-page .section:nth-of-type(2) h2 {
+  margin-top: 0;
+}
+
+/* ==========================================
+   Fix: align horizontal line in How We Help cards
+   (SAFE – no layout changes elsewhere)
+   ========================================== */
+
+/* Make grid items stretch to the same height */
+.grid {
+  align-items: stretch;
+}
+
+/* Ensure cards fill full height */
+.card {
+  display: flex;
+}
+
+/* Make card-content fill card height */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Utility: remove bottom margin when needed (service pages only) */
+.service-page .no-margin {
+  margin-bottom: 0;
+}
+
+/* Delivery Model – equal-height cards */
+.section .grid {
+  align-items: stretch;
+}
+
+.section .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.section .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+DATA & AI PAGE – PRECISE SECTION SPACING FIX
+========================================================= */
+
+/* Reduce gap: Intro → How We Help */
+.data-ai-page .section:first-of-type {
+  padding-bottom: 30px;
+}
+
+.data-ai-page .section + .section {
+  padding-top: 40px; /* overrides global 90px */
+}
+
+/* Remove gap: Who We Support → CTA */
+.data-ai-page .section:nth-last-of-type(2) {
+  padding-bottom: 30px;
+}
+
+.data-ai-page .section:last-of-type {
+  padding-top: 30px;
+}
+
+/* Prevent heading margin stacking */
+.data-ai-page .section h2 {
+  margin-top: 0;
+}
+
+/* =========================================================
+SECURITY PAGE – DEFINITIVE SECTION SPACING FIX
+========================================================= */
+
+/* Reduce gap: Intro → How We Help */
+.security-page section.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Tighten specifically before How We Help */
+.security-page section.section + section.section {
+  padding-top: 35px;
+}
+
+/* Remove heading margin stacking */
+.security-page h2 {
+  margin-top: 0;
+}
+
+/* Safety override in case inline margin still exists */
+.security-page .grid {
+  margin-top: 20px !important;
+}
