@@ -1118,3 +1118,28 @@ SECURITY PAGE – DEFINITIVE SECTION SPACING FIX
   margin-top: 20px !important;
 }
 
+/* =========================================================
+TALENT (SERVICE PAGE) – SECTION SPACING FIX
+Visible, meaningful reduction
+========================================================= */
+
+/* Reduce overall section padding on Talent page */
+.service-page .section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* Tighten flow between adjacent sections */
+.service-page .section + .section {
+  padding-top: 30px;
+}
+
+/* Remove heading margin stacking */
+.service-page h2 {
+  margin-top: 0;
+}
+
+/* Override inline grid spacing safely */
+.service-page .grid {
+  margin-top: 20px !important;
+}
