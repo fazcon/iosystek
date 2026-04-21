@@ -1094,33 +1094,27 @@ DATA & AI PAGE – PRECISE SECTION SPACING FIX
 }
 
 /* =========================================================
-SECURITY PAGE – SECTION SPACING FIX
+SECURITY PAGE – DEFINITIVE SECTION SPACING FIX
 ========================================================= */
 
 /* Reduce gap: Intro → How We Help */
-.security-page .section:first-of-type {
-  padding-bottom: 30px;
+.security-page section.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.security-page .section:nth-of-type(2) {
+/* Tighten specifically before How We Help */
+.security-page section.section + section.section {
   padding-top: 35px;
 }
 
-/* Remove extra spacing caused by inline grid margin */
-.security-page .section:nth-of-type(2) .grid {
-  margin-top: 20px !important;
-}
-
-/* Reduce gap: Who We Support → CTA */
-.security-page .section:nth-of-type(3) {
-  padding-bottom: 30px;
-}
-
-.security-page .section:last-of-type {
-  padding-top: 30px;
-}
-
-/* Prevent heading margin stacking */
+/* Remove heading margin stacking */
 .security-page h2 {
   margin-top: 0;
 }
+
+/* Safety override in case inline margin still exists */
+.security-page .grid {
+  margin-top: 20px !important;
+}
+
