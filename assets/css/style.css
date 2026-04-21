@@ -1065,3 +1065,45 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+/* =========================================================
+DATA & AI PAGE – SECTION SPACING FIXES
+Reduces excessive vertical gaps for cleaner flow
+========================================================= */
+
+/* 1) Tighten gap between intro
+   "Data Platforms Built for Real Decisions"
+   and "How We Help"
+*/
+.data-ai-page .section:first-of-type {
+  padding-bottom: 25px;
+}
+
+.data-ai-page .section:nth-of-type(2) {
+  padding-top: 30px;
+}
+
+.data-ai-page .section:nth-of-type(2) h2 {
+  margin-top: 0;
+}
+
+/* 2) Remove gap between
+   "Who We Support"
+   and CTA "Ready to Strengthen Your Data Platform?"
+*/
+.data-ai-page .section:nth-of-type(3) {
+  padding-bottom: 20px;
+}
+
+.data-ai-page .section:nth-of-type(4) {
+  padding-top: 25px;
+}
+
+.data-ai-page .section:nth-of-type(4) h2 {
+  margin-top: 0;
+}
+
+/* Optional: tighten CTA text spacing for stronger visual impact */
+.data-ai-page .section:nth-of-type(4) p {
+  margin-bottom: 20px;
+}
