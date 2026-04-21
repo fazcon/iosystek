@@ -1049,3 +1049,19 @@ footer {
 .service-page .no-margin {
   margin-bottom: 0;
 }
+
+/* Delivery Model – equal-height cards */
+.section .grid {
+  align-items: stretch;
+}
+
+.section .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.section .card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
